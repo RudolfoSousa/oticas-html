@@ -95,3 +95,45 @@
     cursor: pointer;
     outline: none;
 }
+
+/*Header*/
+.navbar{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 4;
+	background: rgba(9, 19, 57, .85);
+}
+.navbar .logo img{
+	max-width: 348px;
+}
+.navbar .navbar-container{
+	margin-left: 18%;
+	display: flex;
+	align-items: center;
+}
+.navbar .navbar-container nav{
+	margin-left: 115px;
+}
+.navbar .navbar-container nav ul{
+	display: flex;
+}
+.navbar .navbar-container nav ul li{
+	list-style: none;
+	margin-right: 40px;
+}
+.navbar .navbar-container nav ul li a{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 100;
+	font-size: 16px;
+	text-decoration: none;
+	display: block;
+	padding: 60px 0;
+	border-bottom: 5px solid rgba(255, 108, 0, 0);
+}
+.navbar .navbar-container nav ul li a.selected{
+	border-bottom: 5px solid rgba(255, 108, 0, 1);
+	font-weight: bold;
+}
+/*End Header*/
