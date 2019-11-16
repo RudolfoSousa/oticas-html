@@ -1,13 +1,49 @@
 <html>
 	<head>
-		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/responsive.css">
 	</head>
 	<body>
 		<main>
-			
+			<section id="webdoor">
+				<!-- Slider main container -->
+				<div class="swiper-container">
+				    <!-- Additional required wrapper -->
+				    <div class="swiper-wrapper">
+				        <!-- Slides -->
+				        <div class="swiper-slide">
+				        	<div class="gradient"></div>
+				        	<img src="images/slide1.png" alt="">
+				        	<div class="webdoor-title">
+					        	<h1>Qualidade, atendimento e preço é aqui, morô?</h1>
+				        	</div>
+				        </div>
+				    </div>
+				    <div class="navegation">
+				    	<div class="swiper-button-prev"></div>
+				    	<div class="swiper-pagination"></div>
+					    <div class="swiper-button-next"></div>
+				    </div>
+				</div>
+				<div class="searchbar">
+	        		<span>Encontre uma de nossas lojas perto da sua casa</span>
+	        		<form class="search-location" action="">
+	        			<input type="text" id="cidade" placeholder="Cidade">
+	        			<input type="text" id="estado" placeholder="Estado">
+	        			<input type="text" id="cep" placeholder="Cep">
+	        			<button type="send">Icon</button>
+	        		</form>
+	        	</div>
+			</section>
 		</main>
 		<footer>
 			
 		</footer>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
