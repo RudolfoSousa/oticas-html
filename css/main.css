@@ -3,6 +3,9 @@
 	padding: 0;
 	font-family: Helvetica, sans-serif;
 }
+.yellow{
+	color: #FF6C00;
+}
 .gradient{
 	/*display: none;*/
 	position: absolute;
@@ -134,6 +137,31 @@
 }
 .navbar .navbar-container nav ul li a.selected{
 	border-bottom: 5px solid rgba(255, 108, 0, 1);
+	font-weight: bold;
+}
+.navbar .navbar-container .navbar-contato{
+	padding-left: 33px;
+	border-left: 1px solid #FFFFFF;
+}
+.navbar .navbar-container .navbar-contato p,
+.navbar .navbar-container .navbar-contato small{
+	color: #ffffff;
+	font-weight: 300;
+}
+.navbar .navbar-container .navbar-contato p span{
+	font-size: 12px;
+}
+.navbar .navbar-container .navbar-contato p span.yellow{
+	font-size: 16px;
+	font-weight: bold;
+}
+.navbar .navbar-container .navbar-contato small{
+	font-size: 9px;
+	font-weight: 300;
+	margin-top: 5px;
+	display: block;
+}
+.navbar .navbar-container .navbar-contato small span.yellow{
 	font-weight: bold;
 }
 /*End Header*/
