@@ -17,11 +17,14 @@
 	background: -o-linear-gradient(left, rgba(2,0,36,1) 0%, rgba(254,254,254,0) 100%);
 	background: linear-gradient(to right, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 45%, rgba(254,254,254,0) 100%);
 }
-.swiper-slide img{
+#webdoor{
+    transform: translateZ(-12px);
+}
+#webdoor .swiper-slide img{
 	height: 100vh;
 	float: right;
 }
-.swiper-slide .webdoor-title{
+#webdoor .swiper-slide .webdoor-title{
 	position: absolute;
 	top: 40%;
 	left: 18%;
@@ -32,8 +35,9 @@
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.swiper-button-next, .swiper-button-prev,
-.swiper-pagination{
+#webdoor .swiper-button-next,
+#webdoor .swiper-button-prev,
+#webdoor .swiper-pagination{
 	position: relative;
 	display: block;
 	top: 0;
@@ -167,16 +171,23 @@
 /*End Header*/
 
 /*corporate*/
+#corporate{
+    margin-top: -50px;
+    transform: translateZ(10px);
+    position: relative;
+}
 #corporate .wrapper-corporate{
 	display: flex;
+	align-items: flex-end;
 }
 #corporate .wrapper-corporate .disk-corporate{
 	width: 45%;
-	border-bottom: 7px solid #091339;
+	display: flex;
+	flex-direction: column;
 }
 #corporate .wrapper-corporate .disk-corporate img{
 	width: 100%;
-	max-width: 500px;
+	max-width: 470px;
 	display: block;
 }
 #corporate .wrapper-corporate .disk-corporate .disk-corporate-flex{
@@ -184,6 +195,8 @@
 	justify-content: space-between;
 	align-items: flex-end;
 	padding-left: 40px;
+	width: 100%;
+	border-bottom: 7px solid #091339;
 }
 #corporate .wrapper-corporate .disk-corporate .disk-corporate-flex .disk-phone{
 	background-color: #091339;
@@ -203,13 +216,13 @@
 	padding: 100px 70px;
 	width: 55%;
 }
-#corporate .about-corporate h2{
+#corporate h2{
 	font-size: 32px;
 	font-weight: bold;
 	color: #FFFFFF;
 	margin-bottom: 10px;
 }
-#corporate .about-corporate h4.corporate-subtitle{
+#corporate h4.corporate-subtitle{
 	color: #00BAFF;
 	font-style: italic;
 	font-weight: 300;
@@ -235,5 +248,95 @@
 	display: block;
 	text-align: center;
 	line-height: 50px;
+}
+#corporate .brands-left{
+	width: 45%;
+	height: 762px;
+	background: transparent url('../images/glasses.png') 16% 0% no-repeat padding-box;
+	mix-blend-mode: multiply;
+}
+#corporate .wrapper-gradient{
+	background: transparent linear-gradient(247deg, #2D2E90 0%, #1B1B5A 100%) 0% 0% no-repeat padding-box;
+	align-items: inherit;
+}
+#corporate .wrapper-gradient .brands-right{
+	background-color: #091339;
+	padding: 100px 70px;
+    width: 55%;
+}
+#corporate .wrapper-gradient .brands-right h2{
+	position: relative;
+}
+#corporate .wrapper-gradient .brands-right h2:after{
+	content: "Marcas";
+	position: absolute;
+	font-size: 200px;
+	text-transform: uppercase;
+	font-weight: bold;
+	opacity: 0.03;
+	top: 50%;
+	left: -70px;
+	transform: translate(0, -50%);
+}
+#corporate .swiper-container.swiper-brands{
+	position: absolute;
+	width: 100%;
+	bottom: 305px;
+}
+#corporate .swiper-container.swiper-brands .swiper-slide .card{
+	height: 264px;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	opacity: .4;
+	transition: .2s;
+}
+#corporate .swiper-container.swiper-brands .swiper-slide.swiper-slide-active{
+	width: 570px !important;
+	margin-right: 30px;
+}
+#corporate .swiper-container.swiper-brands .swiper-slide.swiper-slide-active .card{
+	opacity: 1;
+	width: 570px;
+	flex-direction: row;
+}
+#corporate .swiper-container.swiper-brands .swiper-slide.swiper-slide-active .card .card-media img{
+	width: auto;
+	max-width: 220px;
+	height: 262px;
+	max-height: 100%;
+}
+#corporate .swiper-container.swiper-brands .swiper-slide.swiper-slide-active .card .card-content,
+#corporate .swiper-container.swiper-brands .swiper-slide. .card .card-media{
+	flex: 1;
+}
+#corporate .swiper-container.swiper-brands .swiper-slide.swiper-slide-active .card .card-content{
+	flex: 1;
+	padding: 27px;
+    align-items: baseline;
+}
+#corporate .swiper-container.swiper-brands .swiper-slide.swiper-slide-active .card .card-media{
+	flex: 0;
+}
+#corporate .swiper-container.swiper-brands .swiper-slide .card img{
+	width: 100%;
+	max-height: 220px;
+}
+#corporate .swiper-container.swiper-brands .swiper-slide .card .card-content{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 7px;
+}
+#corporate .swiper-container.swiper-brands .swiper-slide .card .card-content img{
+	max-width: 133px;
+}
+#corporate .swiper-container.swiper-brands .swiper-slide .card .card-content p{
+	display: none;
+}
+#corporate .swiper-container.swiper-brands .swiper-slide.swiper-slide-active .card .card-content p{
+	display: block;
+	margin-top: 8px;
 }
 /*end corporate*/
