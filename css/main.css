@@ -289,8 +289,12 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	opacity: .4;
+	opacity: .2;
 	transition: .2s;
+}
+#corporate .swiper-container.swiper-brands .swiper-slide.swiper-slide-next .card,
+#corporate .swiper-container.swiper-brands .swiper-slide.swiper-slide-prev .card{
+	opacity: .4;
 }
 #corporate .swiper-container.swiper-brands .swiper-slide.swiper-slide-active{
 	width: 570px !important;
@@ -340,3 +344,26 @@
 	margin-top: 8px;
 }
 /*end corporate*/
+
+/*best brands*/
+#best-brands{
+	transform: translateZ(11px);
+	background: transparent linear-gradient(257deg, #00BAFF 0%, #2CDDFD 100%) 0% 0% no-repeat padding-box;
+	max-height: 504px;
+}
+#best-brands .best-brands-wrapper{
+	display: flex;
+	align-items: center;
+	margin-left: 18%;
+}
+#best-brands .best-brands-wrapper h3{
+	font-size: 40px;
+	font-weight: bold;
+	color: #ffffff;
+	max-width: 570px;
+}
+#best-brands .best-brands-wrapper img{
+	max-width: 950px;
+	margin-top: -130px;
+}
+/*end best brands*/
